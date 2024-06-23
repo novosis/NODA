@@ -1,0 +1,30 @@
+.Escuela{
+    background-color: rgb(121, 121, 121);
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    cursor: pointer;
+    border: none;
+}
+.Liceo{
+    background-color: rgb(121, 121, 121);
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    cursor: pointer;
+    border: none;
+}
+
+.Escuela h1,.Liceo h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+
+}
