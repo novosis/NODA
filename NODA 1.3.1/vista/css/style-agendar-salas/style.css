@@ -1,0 +1,236 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../img/fondo.png');
+    background-size: cover;
+    line-height: normal;
+}
+*, ::after, ::before {
+     box-sizing: content-box;
+}
+button, input, optgroup, select, textarea {
+    font-family: 'lexend', sans-serif;
+    font-size: small;
+    line-height: normal;
+}
+
+.Buscador {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    justify-content: center;
+    background-color: #55A4FF;
+    border-radius: 10px;
+    padding: 4px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Estilos para el icono dentro del buscador */
+.Buscador .IconoBuscador {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* Estilos para el campo de texto dentro del buscador */
+.Buscador input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-style: normal;
+    color: white;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+/* Estilos para el campo de texto cuando está enfocado */
+.Buscador input[type="text"]:focus {
+    outline: none;
+}
+
+/* Estilos para el texto del placeholder en el campo de texto */
+.Buscador input[type="text"]::placeholder {
+    color: white;
+    font-family: 'Lexend', sans-serif;
+}
+
+/* Estilo para usuarios con cargo distinto de "operativo" */
+.full-height {
+    max-height: 87.5vh;
+    overflow-y: auto;
+}
+
+/* Estilo para usuarios con cargo "operativo" */
+.default-height {
+    max-height: 78.2vh;
+    overflow-y: auto;
+}
+
+/* Estilos para la barra de desplazamiento en navegadores WebKit */
+.ContenedorSalas::-webkit-scrollbar {
+    width: 10px;
+}
+
+.ContenedorSalas::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.ContenedorSalas::-webkit-scrollbar-thumb {
+    background: #3392FF;
+    border-radius: 3px;
+}
+
+.ContenedorSalas::-webkit-scrollbar-thumb:hover {
+    background: #007BFF;
+}
+
+/* Estilos para cada sala */
+.Sala {
+    background-color: #9CD1F2;
+    margin: 35px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contenedor de información de la sala */
+.SalaInfo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Imagen de la sala */
+.SalaImagen {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Contenedor de texto dentro de la información de la sala */
+.SalaInfo div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Párrafos dentro de la información de la sala */
+.SalaInfo p {
+    margin: 5px 0;
+}
+
+/* Botón para agendar */
+.Agendar {
+    background-color: #3392FF;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+    margin-right: 20px; 
+}
+
+/* Contenedor para agregar una nueva sala */
+.AgregarSalaContainer {
+    text-align: right;
+    margin: 20px;
+}
+
+/* Botón para agregar una nueva sala */
+#btnAgregarSala {
+    background-color: #3392FF;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Superposición del formulario */
+.formulario-overlay2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Contenedor del formulario */
+.formulario-container {
+    background-color: #9CD1F2;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.5); 
+}
+
+/* Título del formulario */
+.formulario-container h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Etiquetas del formulario */
+.formulario-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Campos de entrada del formulario */
+.formulario-container input {
+    width: 100%;
+    max-width: 332px; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón para guardar la sala */
+#btnGuardarSala {
+    background-color: #3392FF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+/* Estilos para el botón de cerrar el formulario */
+#btnCerrarFormulario {
+    background-color: #3392FF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+}

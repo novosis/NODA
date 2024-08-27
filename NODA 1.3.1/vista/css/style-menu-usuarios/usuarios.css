@@ -1,0 +1,369 @@
+*{
+margin: 0%;
+
+}
+body{
+background-size: cover;
+background-image: url(../../img/fondo.png); 
+
+}
+
+#header{
+    width: 100%;
+    height: 65px;
+    background-color: #3091FF;
+}
+#logo{
+    background-image: url(../../img/logo.png);
+    background-size: cover;
+    width: 68px;
+    height: 65px;
+    left: 2%;
+    position: absolute;
+    
+    
+}
+#usuario{/*icono de perfil*/
+    background-image: url(../../img/avatar\ 7.png);
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+    left: 94%;
+    position: absolute;
+    
+    
+}
+
+
+#escuela{/*div de escuela*/
+width: 80%;
+height: 30px;
+background-color: #3091FF;
+position: absolute;
+left: 150px;
+top: 80px;
+border-radius: 8px;
+color: white;
+font-family: 'Franklin Gothic Medium';
+}
+
+
+
+#liceo{ /*div del liceo*/
+    width: 70%;
+    height: 30px;
+    background-color: #002C6F;
+    position: absolute;
+    left: 140px;
+    top: 80px;
+    border-radius: 8px;
+    color: white;
+font-family: 'Franklin Gothic Medium';
+    
+    }
+    
+    #pesc{/*texto del div escuela*/
+        position: absolute;
+        left: 90%;
+        top: 5%;
+    }
+    
+    #plic{ /*texto del div liceo*/
+        position: absolute;
+        left: 90%;
+        top: 5%;
+    }
+
+#formu{/*form para ingresar correo*/
+    position: absolute;
+    top: 140px;
+    
+}
+
+#Email{
+    height: 35px;
+    width: 200px;
+    background-color:#002C6F;
+    color: white;
+    position: absolute;
+    left: 200px;
+    border: 0cap;
+    top: 7.2px;
+}
+
+#agregar{ /*botón de agregar*/
+    width: 50px;
+    height: 50px;
+    background-color: #3091FF;
+    background-image: url(../../img/add\ 2.png);
+    background-size: cover;
+    border-color: white;
+    border-radius: 5px;
+    position: absolute;
+    left: 90px;
+    top: 140px;
+}
+
+#divchico{
+    width: 0;
+    height: 0;
+    width: 38px;
+    height: 38px;
+    background-color: #002C6F;
+    clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+    position: absolute;
+    top: 147px;
+    left: 163px;
+}
+
+#divchico, #formu {
+    display: none; /* Oculta estos elementos por defecto */
+}
+
+.buscador{ /*input del buscador*/
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    justify-content: center;
+    background-color: #55A4FF;
+    border-radius: 10px;
+    padding: 4px;
+    max-width: 260px;
+    width: 100%;
+    position: absolute;
+    left: 75%;
+    top: 18%;
+}
+
+/* Estilos para el icono dentro del buscador */
+.buscador .IconoBuscador {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* Estilos para el campo de texto dentro del buscador */
+.buscador input[id="buscar"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-style: normal;
+    color: white;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+/* Estilos para el campo de texto cuando está enfocado */
+.buscador input[id="buscar"]:focus {
+    outline: none;
+}
+
+/* Estilos para el texto del placeholder en el campo de texto */
+.buscador input[id="buscar"]::placeholder {
+    color: white;
+    font-family: 'Lexend', sans-serif;
+}
+
+
+
+#opciones{ /*menu de opciones*/
+    width: 80px;
+    height: 280px;
+    border-radius: 8px;
+    background-color: #3091FF;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+}
+
+#inicio{ /*enlace a inicio*/
+
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    position: absolute;
+    background-image: url(../../img/);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    left: 12%;
+}
+
+#misReservas{ /*enlace a misReservas*/
+
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    position: absolute;
+    background-image: url(../../img/misReservas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    top: 20%;
+    left: 12%;
+}
+
+
+#reservas{ /*enlace a reservas*/
+
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    position: absolute;
+    background-image: url(../../img/reservas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    top: 40%;
+    left: 12%;
+}
+
+#usuarios{ /*enlace a los perfiles de usuarios*/
+
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    position: absolute;
+  background-image: url(../../img/usuario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    top: 60%;
+    left: 12%;
+}
+#salas{ /*enlace a ver salas*/
+
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    position: absolute;
+    background-image: url(../../img/verSalas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    top: 80%;
+    left: 12%;
+}
+
+.card-container { /*div donde se cargan las tarjetas*/
+    width: 80%;
+    position: absolute;
+ text-align: center;
+    top: 190px;
+}
+
+.card { /*tarjetas de usuario*/
+    width: 190px;
+    height: 240px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color:rgba(3, 24, 141, 0.844);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: right;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p{
+    margin: 0%;
+  
+}
+
+
+#pcorreo{
+    font-size: 12px;
+}
+
+#img{ /*imagen de las tarjetas*/
+width: 90%;
+height: 60%;
+margin-left: 6px;
+background-image: url(../../img/usersicon.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 8px;
+
+
+}
+
+#info{ /*info de las tarjetas*/
+    width: 90%;
+    height: 60px;
+    margin-left: 6px;
+    background-color: #002C6F;
+    border-radius: 8px;
+    font-style: verdana;  
+    
+}
+.card h3 { /*h3 de las tarjetas*/
+    margin-top: 0;
+}
+
+.card button { /*botones de las tarjetas*/
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+#editar{ /*botón editar*/
+    width: 40%;
+    height: 30px;
+    background-color: rgb(100, 156, 240);
+    border-radius: 5px;
+border-color: white;
+color: white;
+}
+
+#eliminar{/*botón eliminar*/
+    width: 40%;
+    height: 30px;
+    background-color: rgb(229, 49, 49);
+    border-radius: 5px;
+    border-color: white;
+    color: white;
+    }
+
+
+#botones{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tooltip { /*tooltips del menú de opciones*/
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext { /*estilos del tooltip y el texto*/
+    visibility: hidden;
+    width: 150px; /* Ancho del tooltip */
+    background-color: #fefeff; /* Color de fondo del tooltip */
+    color: #1c0f4a; /* Color del texto */
+    text-align: center;
+    border-radius: 6px; /* Bordes redondeados */
+    border-color: #002C6F;
+    border-style: groove;
+    padding: 10px; /* Espaciado interno */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posición del tooltip arriba del elemento */
+    left: 50%;
+    margin-left: -75px; /* Centro horizontal del tooltip */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s; /* Transición de opacidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del tooltip */
+    font-size: 20px; /* Tamaño de fuente */
+    font-family: 'Franklin Gothic Medium';
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1; /* Tooltip visible cuando el mouse está sobre el elemento */
+}
