@@ -1,0 +1,127 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #A2DBFF;
+    font-family: 'lexend', sans-serif;
+    overflow: hidden;
+    }
+    
+    
+    #header{
+    width: 100%;
+    height: 60px;
+    background-color: #55A4FF;
+    }
+    
+    
+    #liceo{
+        width: 1100px;
+        height: 30px;
+        background-color: 
+        #3392FF;
+        border-radius: 15px;
+        position: absolute;
+        left: 15%;
+        top: 80px;
+        z-index: 1;
+    }
+    
+    #escuela{
+        width: 980px;
+        height: 30px;
+        background-color: #002C6F;
+        border-radius: 15px;
+        position: absolute;
+        left: 10%;
+        top: 80px;
+        z-index: 2;
+    }
+    
+    #blanco1{
+        width: 45%;
+        height: 550px;
+        background-color: aliceblue;
+        position: absolute;
+        top: 120px;
+        left: 130px;
+         clip-path: polygon(0% 0%, 98% 0%, 70% 100%, 0% 100%);
+    }
+    
+    #blanco2{
+        width: 45%;
+        height: 550px;
+        background-color: aliceblue;
+        position: absolute;
+        top: 120px;
+        left: 660px;
+        clip-path: polygon(28% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    
+    #verSalas{
+        width: 97%;
+        height: 97%;
+        background-color: aliceblue;
+        position: absolute;
+        left:8px;
+        top: 8px;
+         clip-path: polygon(0% 0%, 98% 0%, 70% 100%, 0% 100%);
+         background-color:  #4DACFF;
+         transition: all 0.3s ease;
+    
+    }
+    #verSalas img{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 140px;
+        top: 100px;
+        user-select: none;
+    }
+    #verSalas h1{
+        font-size: 30px;
+        color: white;
+        position: absolute;
+        left: 160px;
+        top: 325px;
+        user-select: none;
+    }
+    #verSalas:hover{
+        transform: scale(1.035);
+    }
+    
+    #misReservas{
+        width: 97%;
+        height: 97%;
+        position: absolute;
+        left:12px;
+        top: 8px;
+        background-color: #3392FF;
+        transition: all 0.3s ease;
+        clip-path: polygon(28% 0%, 100% 0%, 100% 100%, 0% 100%);
+    
+    }
+    
+    #misReservas img{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 270px;
+        top: 100px;
+        user-select: none;
+    }
+    #misReservas h1{
+        font-size: 30px;
+        color: white;
+        position: absolute;
+        left: 270px;
+        top: 325px;
+        user-select: none;
+    }
+    
+    #misReservas:hover{
+        transform: scale(1.035);
+    }
+    
+    
+    
+    
