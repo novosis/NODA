@@ -1,0 +1,204 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #55A4FF;
+}
+.header .logo {
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    position: relative;
+    user-select: none;
+}
+
+/* Iniciales en el user-icon */
+.icon-iniciales {
+    color: #55A4FF;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    font-family: 'Lexend', sans-serif;
+    user-select: none;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 205px;
+    height: auto;
+    max-height: 300px;
+    padding: 10px;
+    z-index: 1000;
+    cursor: default;
+    text-align: center;
+    user-select: none;
+}
+
+.cruz{
+    position: absolute;
+    left: 200px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.equisimg{
+    width: 15px;
+    height: 15px;
+}
+
+.perfil p {
+    font-size: 14px;
+    color: black;
+    font-family: 'Lexend', sans-serif;
+}
+
+.username {
+    font-weight: bold; 
+    font-size: 16px;   
+    font-family: 'Lexend', sans-serif;
+}
+
+.perfil .username{
+    margin-bottom: -10px;
+}
+
+/* Círculo con iniciales dentro del menú */
+.inicialesheader {
+    width: 50px;
+    height: 50px;
+    background-color: #55A4FF;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    font-size: 18px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espacio entre botones */
+    font-family: 'Lexend', sans-serif;
+}
+
+.perfil button {
+    width: 98px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Lexend', sans-serif;
+}
+
+.editar {
+    background-color: #ddd;
+}
+
+.cerrar-sesion {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.formulario-Editar{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.formulario-EdiatPerfil{
+background-color: #9CD1F2;
+padding: 35px 50px;
+border-radius: 20px;
+text-align: center;
+max-width: 332px;
+width: 100%;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.5);
+}
+#nombreEditar,
+#apellidoEditar,
+#passwordEditar,
+#confirmarpassEditar {
+    width: 100%;
+    max-width: 332px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón para guardar la sala */
+#btnGuardarPerfil {
+    background-color: #3392FF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+/* Estilos para el botón de cerrar el formulario */
+#btnCerrarFormularioEditar {
+    background-color: #3392FF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.h2, h2 {
+    font-size: calc(1.325rem + .9vw);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#nombre,
+#apellido,
+#password,
+#confpass{
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}

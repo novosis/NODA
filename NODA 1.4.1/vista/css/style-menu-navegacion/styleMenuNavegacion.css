@@ -1,0 +1,25 @@
+.containerMenu {
+    width: 100px;
+    position: absolute;
+    top: 28%;
+}
+
+#opciones {
+    width: 83px;
+    height: auto;
+    background-color: #55A4FF;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+.div {
+    margin: 10px;
+    cursor: pointer;
+}
+
+img {
+    width: auto;
+    height: 60px;
+    user-select: none;
+    vertical-align: baseline;
+}
