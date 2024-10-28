@@ -1,0 +1,503 @@
+/* Estilos generales para el cuerpo del documento */
+html, body {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../img/fondo.png');
+    background-size: cover;
+    line-height: normal;
+    height: 100vh;
+}
+
+.h2, h2 {
+    font-size: calc(1.325rem + .9vw);
+    margin-top: 5px;
+    margin-bottom: 7px;
+    font-weight:bold;
+    line-height: 2;
+}
+
+img{
+vertical-align: baseline;
+}
+
+*, ::after, ::before {
+     box-sizing: content-box;
+}
+button, input, optgroup, select, textarea {
+    font-family: 'lexend', sans-serif;
+    font-size: small;
+    line-height: normal;
+}
+.dropdown {
+    position: absolute;
+}
+
+p {
+    margin-top: revert;
+    margin-bottom: revert;
+}
+
+.Buscador {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    justify-content: center;
+    background-color: #55A4FF;
+    border-radius: 10px;
+    padding: 4px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Estilos para el icono dentro del buscador */
+.Buscador .IconoBuscador {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* Estilos para el campo de texto dentro del buscador */
+.Buscador input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-style: normal;
+    color: white;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+/* Estilos para el campo de texto cuando está enfocado */
+.Buscador input[type="text"]:focus {
+    outline: none;
+}
+
+/* Estilos para el texto del placeholder en el campo de texto */
+.Buscador input[type="text"]::placeholder {
+    color: white;
+    font-family: 'Lexend', sans-serif;
+}
+
+/* Estilo para usuarios con cargo distinto de "operativo" */
+.full-height {
+    max-height: 80.7vh;
+    overflow-y: auto;
+}
+
+/* Estilo para usuarios con cargo "operativo" */
+.default-height {
+    max-height: 72.2vh;
+    overflow-y: auto;
+}
+
+/* Estilos para la barra de desplazamiento en navegadores WebKit */
+.ContenedorSalas::-webkit-scrollbar {
+    width: 10px;
+}
+
+.ContenedorSalas::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.ContenedorSalas::-webkit-scrollbar-thumb {
+    background: #3392FF;
+    border-radius: 3px;
+}
+
+.ContenedorSalas::-webkit-scrollbar-thumb:hover {
+    background: #007BFF;
+}
+
+/* Estilos para cada sala */
+.Sala {
+    position: relative; /* Establece .Sala como el contenedor de referencia */
+    background-color: #9CD1F2;
+    margin: 35px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; /* Asegura que la Sala esté por encima del botón de eliminar */
+}
+
+/* Contenedor de información de la sala */
+.SalaInfo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Imagen de la sala */
+.SalaImagen {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Contenedor de texto dentro de la información de la sala */
+.SalaInfo div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Párrafos dentro de la información de la sala */
+.SalaInfo p {
+    margin: 5px 0;
+}
+
+/* Botón para agendar */
+.Agendar {
+    background-color: #3392FF;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+    margin-right: 20px; 
+}
+
+/* Contenedor para agregar una nueva sala */
+.AgregarSalaContainer {
+    text-align: right;
+    margin: 20px;
+}
+
+/* Botón para agregar una nueva sala */
+#btnAgregarSala {
+    background-color: #3392FF;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Superposición del formulario */
+.formulario-overlay2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Contenedor del formulario */
+.formulario-container {
+    background-color: #9CD1F2;
+    padding: 35px 50px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 370px;
+    width: 100%; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.5); 
+}
+
+/* Título del formulario */
+.h2, h2 {
+    font-size: calc(1.325rem + .9vw);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas del formulario */
+#imagen,
+#imagenn,
+#nom_sala,
+#capa_persona,
+#recurso_sala{
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Campos de entrada del formulario */
+#imagenEditar,
+#nombreSala,
+#capacidadSala,
+#recursosSala,
+#imagen,
+ #nombreSalaEditar,
+ #capacidadSalaEditar,
+ #recursosSalaEditar{
+    width: 100%;
+    max-width: 332px; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón para guardar la sala */
+#btnGuardarSala {
+    background-color: #3392FF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+/* Estilos para el botón de cerrar el formulario */
+#btnCerrarFormulario {
+    background-color: #3392FF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+/* Estilos generales para los botones Eliminar y Editar */
+.Eliminar, .Editar {
+    position: absolute;
+    right: -10px; /* Mueve el botón fuera del borde derecho */
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #3392FF;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    pointer-events: all;
+    transition: right 0.4s ease;
+}
+
+.Editar {
+    top: 70%;
+}
+
+/* Estilos para ocultar los íconos dentro de los botones inicialmente */
+#Eliminar, #Editar {
+    width: 25px;
+    height: 25px;
+    margin: 13.5px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+/* Mover los botones hacia la derecha y mostrar los íconos al pasar el mouse sobre los botones Eliminar y Editar */
+.Eliminar:hover, .Editar:hover {
+    right: -50px; 
+}
+
+.Eliminar:hover #Eliminar, .Editar:hover #Editar {
+    opacity: 1; 
+}
+
+.Tapar {
+    width: 44px;
+    height: 120px;
+    background-color: #9CD1F2;
+    position: absolute; /* Posiciona el elemento respecto al padre */
+    top: 0; /* Ajusta la posición vertical si es necesario */
+    right: 0;
+    transform: translateY(17%);
+    z-index: 1;
+}
+
+.containerEliminar{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.EliminarSala{
+    background-color: #9CD1F2;
+    padding: 25px 50px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.5); 
+}
+#btnCerrarEliminar{
+    background-color: #3392FF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+#btnEliminarSala{
+    background-color: #3392FF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.containerEditar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+/* Contenedor del formulario */
+.formulario-editar-container {
+    background-color: #9CD1F2;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.5); 
+}
+#btnCerrarEditar{
+    background-color: #3392FF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+#btnEditarSala{
+    background-color: #3392FF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.alert{
+    position: absolute;
+    background-color: #9CD1F2;
+    padding: 20px 40px;
+    min-width: 420px;
+    right: 0;
+    top: 10px;
+    overflow: hidden;
+    border-radius: 4px;
+    border-left: 8px solid #3392FF;
+    --bs-alert-border-color: auto;
+}
+.alert.showAlert{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.alert.show{
+    animation: show_slide 1s ease forwards;
+}
+@keyframes show_slide {
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10%);
+    }
+}
+.alert.hide{
+    animation: hide_slide 1s ease forwards;
+}
+@keyframes hide_slide {
+    0%{
+        transform: translateX(-10%);
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.alert .fa-exclamation-circule .fa-check{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3392FF;
+    font-size: 30px;
+}
+
+.alert .msg{
+    padding: 0 20px;
+    font-size: 18px;
+    color: white;
+    font-family: "lexend";
+}
+
+.alert .close-btn{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #55A4FF;
+    padding: 20px 18px;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    background: #3392FF;
+}
+
+.close-btn .fa-times{
+    color: white;
+    font-size: 22px;
+    line-height: 40px;
+}
