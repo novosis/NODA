@@ -1,0 +1,286 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #9CD1F2;
+    font-family: 'lexend', sans-serif;
+    overflow: hidden;
+
+}
+
+.todo {
+    width: auto;
+    height: 100vh; /* Asegúrate de que el contenedor padre tenga una altura definida */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* cuarta entrega */
+.opciones {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#escuela{
+    width: 70%;
+    height: 30px;
+    background-color:  #3392FF;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    
+}
+
+
+#liceo{
+    width: 60%;
+    height: 30px;
+    background-color: #002C6F;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    left: 15%;
+    padding: 0%;
+} 
+
+#liceo h1{
+    color: white;
+    position: absolute;
+    right: 15px;
+    font-size:15px ;
+    margin-top: 5px;
+    user-select: none;
+}
+
+#escuela h1{
+    color: white;
+    position: absolute;
+    right: 15px;
+    font-size:15px;
+    margin-top: 5px;
+    user-select: none;
+}
+
+
+#fila1{
+    width: 100%; 
+    padding: 0%;
+    user-select: none;
+
+}
+#fila2{
+    width: 100%;
+    padding: 0%;
+    user-select: none;
+}
+
+
+#blancoVS{
+   
+    width: 400px;
+    height: 220px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    user-select: none;
+}
+
+#blancoMR{
+   
+    width: 400px;
+    height: 220px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    left: 10px;
+    border-radius: 5px; 
+    user-select: none;
+}
+
+#blancoR{
+  
+    width: 400px;
+    height: 220px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    top: 10px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+#blancoP{
+    width: 400px;
+    height: 220px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    left: 10px;
+    top: 10px;
+    border-radius: 5px;
+    user-select: none;
+    
+}
+
+#verSalas{
+    width: 97%;
+    height: 96%;
+    background-color:#64B9FF;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    z-index: 2;
+    border-radius: 5px;
+    transition: transform 0.4s ease;
+    color: white;
+    text-align: center;
+   line-height: 150px;
+   font-family: lexend, sans-serif;
+   user-select: none;
+}
+
+#verSalas:hover{
+    transform: scale(1.046);
+}
+
+
+
+
+#misReservas{
+    width: 97%;
+    height: 96%;
+    background-color: #368DFF;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    z-index: 2;
+    border-radius: 5px;
+    transition: transform 0.4s ease;
+    color: white;
+    text-align: center;
+   line-height: 150px;
+   font-family: 'lexend', sans-serif;
+   user-select: none;
+}
+
+#misReservas:hover{
+    transform: scale(1.046);
+}
+
+#reservas{
+    width: 97%;
+    height: 96%;
+    background-color: #368DFF;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    z-index: 2;
+    border-radius: 5px;
+    transition: transform 0.4s ease;
+    color: white;
+    text-align: center;
+   line-height: 150px;
+   font-family: lexend, sans-serif;
+   user-select: none;
+}
+
+#reservas:hover{
+    transform: scale(1.046);
+}
+
+#perfiles{
+    width: 97%;
+    height: 96%;
+    background-color: #64B9FF;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    z-index: 2;
+    border-radius: 5px;
+    transition: transform 0.4s ease;
+    color: white;
+   text-align: center;
+  line-height: 150px;
+  font-family: 'lexend', sans-serif;
+  user-select: none;
+ 
+}
+
+#perfiles:hover{
+    transform: scale(1.046);
+}
+
+#verSalas img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 150px;
+    user-select: none;
+    top: 20px;
+}
+#perfiles img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 150px;
+    user-select: none;
+    top: 20px;
+}
+
+#reservas img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 150px;
+    user-select: none;
+    top: 20px;
+}
+#misReservas img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 150px;
+    user-select: none;
+    top: 20px;
+}
+
+#verSalas h1{
+    position: absolute;
+    top: 60px;
+    left: 120px;
+    user-select: none;
+}
+
+#misReservas h1{
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    user-select: none;
+}
+
+#reservas h1{
+    position: absolute;
+    top: 60px;
+    left: 120px;
+    user-select: none;
+}
+
+#perfiles h1{
+    position: absolute;
+    top: 60px;
+    left: 140px;
+    user-select: none;
+}
